@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary {
+    @apply bg-purple-500 text-white font-bold py-3 px-6 rounded transition duration-300 text-lg;
+}
+
+.btn-primary:hover {
+    @apply bg-purple-700;
+}
+
+nav a {
+    @apply text-white hover:text-gray-200;
+}
+
+section#projects .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+section#projects .card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    @apply bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-4;
+}
+
+footer div {
+    @apply container mx-auto text-center;
+}
